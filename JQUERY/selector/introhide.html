@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p.intro").hide();         //$("p.intro")	Selects all <p> elements with class="intro"
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <h1 class="intro">Heaading Line</h1>
+
+    <p class="intro">This is a para graph.</p>
+    <p>this is another one.</p>
+
+    <button>click me</button>
+</body>
+</html>
