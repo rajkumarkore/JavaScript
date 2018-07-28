@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <button>Button</button>
+    <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+    <script>
+
+        var Observable = Rx.Observable.interval(1000);
+
+        Observable
+            .filter(function (value) {
+               return value % 2 == 0;
+            })
+            .subscribe({
+            next: function (value) {
+                console.log(value);
+            },
+            error:function (error) {
+                console.log('Error: ', error);
+            }
+ });
+       
