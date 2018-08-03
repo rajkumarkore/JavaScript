@@ -1,0 +1,65 @@
+﻿<form>
+    Name        : <input type="text" name="name" /> </br>
+    Email       : <input type="text" name="email" /> </br>
+    PassWord    : <input type="password" name="password" /> </br>
+    PhoneNumber : <input type="text" size=25 name="phonenumber"> </p><br>
+    Address     : <textarea name="address" cols="20" rows="5"></textarea> </br>
+    <input type="submit" value="submit"
+           onclick="return validateRegistration()" />
+</form>
+
+<script>
+    function validateRegistration()
+	{
+		var myForm = document.forms[0];
+		var name = myForm.name;
+		if (name.value.length == 0)
+		{
+			alert("Please Enter Name");
+			name.focus();
+			return false;
+		}
+		var email = myForm.email;
+		if (email.value == "")
+		{
+			window.alert(" enter a valid e-mail address.");
+			email.focus();
+			return false;
+		}
+		if (email.value.indexOf("@", 0) < 0)
+		{
+			window.alert("enter a valid e-mail address.");
+			email.focus();
+			return false;
+		}
+		if (email.value.indexOf(".", 0) < 0)
+		{
+			window.alert("enter a valid e-mail address.");
+			email.focus();
+			return false;
+		}
+		var password = myForm.password;
+		if (password.value.length < 8)
+		{
+			alert("enter valid password");
+			password.focus();
+			return false;
+		}
+	    var phonenumber = myForm.phonenumber;
+	    if (phonenumber.value.length < 10)
+		{
+			window.alert("enter your valid phonenumber.");
+			phonenumber.focus();
+			return false;
+		}
+
+		var address = myForm.address;
+		if (address.value.length == 0)
+		{
+			alert("Enter address");
+			address.focus();
+			return false;
+		}
+	}
+
+</script>
