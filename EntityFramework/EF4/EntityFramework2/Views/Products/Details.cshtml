@@ -1,0 +1,40 @@
+﻿@model EntityFramework2.Models.tblProduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Product Details</h2>
+<table border="1">
+    <tr>
+        <td> Product Id </td>
+        <td> @Model.ProductId</td>
+    </tr>
+
+    <tr>
+        <td> Product Name </td>
+        <td> @Model.Name</td>
+    </tr>
+    
+    <tr>
+    <td> Product </td>
+    <td> @Model.Price</td>
+</tr>
+</table>
+<br />
+@Html.ActionLink("Back to Products List", "Index", new { id=Model.Catagory_CategoryId})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

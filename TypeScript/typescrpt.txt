@@ -1,0 +1,44 @@
+What is TypeScript?
+-----------------------
+         .TypeScript is JavaScript for application-scale development
+	 >>Typescript is superset of language.
+
+>cmd path then enter
+
+>Enums allow us to define a set of named constants
+>assertions use <> or parantheses===it will tell type of variavble
+
+> => in typescript it ll call  yarrow action other language it call  lamdaexpression 
+> tsc object.ts && node object.
+==================================================
+
+Basic Types:
+=========
+Variable Declarations
+Interfaces
+Classes
+Functions
+Generics
+Enums
+Type Inference
+Type Compatibility
+Advanced Types
+Symbols
+Iterators and Generators
+Modules
+Namespaces
+Namespaces and Modules
+Module Resolution
+Declaration Merging
+JSX
+Decorators
+Mixins
+Triple-Slash Directives
+Type Checking JavaScript Files
+
+
+
+
+
+
+
